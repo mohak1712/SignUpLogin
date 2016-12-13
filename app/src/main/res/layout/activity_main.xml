@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backImg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:src="@drawable/pp" />
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        tools:context="com.progress.mohak.signuplogin.MainActivity">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="#C378C8BE"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/email2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Email"
+                android:inputType="textCapSentences|textEmailAddress"
+                android:padding="20dp"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/pass2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Password"
+                android:inputType="textCapSentences"
+                android:padding="20dp"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/pass3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Confirm Pass"
+                android:inputType="textCapSentences"
+                android:padding="20dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass3"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:rotation="90"
+                android:text="SIGN UP"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.25"
+            android:background="#C37A80C1"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Email"
+                android:inputType="textCapSentences|textEmailAddress"
+                android:padding="20dp" />
+
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:hint="Password"
+                android:inputType="textCapSentences"
+                android:padding="20dp" />
+
+
+            <TextView
+                android:id="@+id/forget"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:inputType="textCapSentences"
+                android:padding="20dp"
+                android:text="Forgot Password ?" />
+
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forget"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:text="LOGIN  "
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="30dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/fb" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/tw" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ln" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
